@@ -71,3 +71,8 @@ SELECT *
 FROM north_american_cities 
 WHERE country = "United States" 
 Order By Population DESC Limit 2 OFFSET 2
+6.1
+SELECT title, domestic_sales, international_sales 
+FROM movies
+JOIN boxoffice
+ON movies.id = boxoffice.movie_id;
